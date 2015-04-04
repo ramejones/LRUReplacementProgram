@@ -35,7 +35,7 @@
       <file leaf-file-name="LRU.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LRU.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="33" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.8296089" vertical-offset="324" max-vertical-offset="1116">
+            <state line="89" column="76" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.6480447" vertical-offset="1102" max-vertical-offset="1980">
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -46,7 +46,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+            <state line="42" column="18" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -62,8 +62,8 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/LRU.js" />
       </list>
     </option>
@@ -192,7 +192,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -272,13 +272,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="13" selection-start="529" selection-end="529" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="38" selection-start="688" selection-end="688" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="578">
@@ -286,9 +279,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="18" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LRU.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="33" selection-start="1769" selection-end="1769" vertical-scroll-proportion="0.8296089" vertical-offset="324" max-vertical-offset="1116">
+        <state line="89" column="76" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.6480447" vertical-offset="1102" max-vertical-offset="1980">
           <folding>
             <element signature="e#0#39#0" expanded="false" />
           </folding>
