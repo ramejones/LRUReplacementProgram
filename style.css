@@ -1,0 +1,54 @@
+#input{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: bisque;
+    border: 1px solid olivedrab;
+    border-radius: 10px;
+    min-width: 50%;
+    max-width: 50%;
+}
+
+.aside{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+input{
+    margin-top: 10px;
+}
+
+#showReplacement{
+    background-color: blueviolet;
+    width: 60px;
+    height: 105px;
+    margin: 100px;
+    border: 2px solid darkcyan;
+}
+
+#referenceString{
+    background-color: cornflowerblue;
+    width: 20px;
+    height: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    /*border-radius: 10px;*/
+}
+
+#pageFrames{
+    background-color: yellowgreen;
+    text-decoration: none;
+    list-style-type: none;
+    /*border-radius: 10px;*/
+    padding-left: 0px;
+    margin: 0px;
+}
+
+li{
+    /*margin-left: 10px;*/
+    padding-top: 5px;
+    margin-left: 30px;
+    padding-left: 10px;
+    border: 1px solid brown;
+    background-color: gold;
+}

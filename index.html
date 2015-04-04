@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LRU Replacement</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <script src="LRU.js"></script>
+</head>
+<body>
+<div id="input">
+    <h1 class="aside">LRU Page Replacement</h1>
+    <form method="get" action="javascript:void(0)" class="aside">
+        <label>Number of Page Table Frames: <input type="number" size="10" maxlength="10" style="margin-left: 52px" id="pageFrameNumber" onblur="getPageFrames()"></label><br />
+        <label>Number of Frames (Physical Memory): <input type="number" size="10" maxlength="10" id="physicalFrameNumber" onblur="getPhysicalFrames()"></label><br />
+        <button onclick="generateLRU()">Generate LRU Replacement</button>
+    </form>
+
+</div>
+
+<!--<div id="showReplacement">-->
+    <!--<div id="referenceString">7</div>-->
+    <!--<ul id="pageFrames"><li>7</li><li>0</li><li>1</li></ul>-->
+<!--</div>-->
+
+<div id="showReplacement">
+    <div id="referenceString"></div>
+    <ul id="pageFrames"></ul>
+</div>
+</body>
+</html>
