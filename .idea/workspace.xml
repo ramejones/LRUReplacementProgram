@@ -35,7 +35,7 @@
       <file leaf-file-name="LRU.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LRU.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="89" column="76" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.6480447" vertical-offset="1102" max-vertical-offset="1980">
+            <state line="6" column="43" selection-start="156" selection-end="156" vertical-scroll-proportion="0.09497207" vertical-offset="0" max-vertical-offset="2533">
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
               </folding>
@@ -46,7 +46,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="18" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+            <state line="42" column="18" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1003">
               <folding />
             </state>
           </provider>
@@ -130,18 +130,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -150,6 +142,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -228,6 +228,29 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="38" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LRU.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="31" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1904">
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="18" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="8" selection-start="652" selection-end="652" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="476">
           <folding />
         </state>
@@ -272,13 +295,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="38" selection-start="688" selection-end="688" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="578">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="18" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
@@ -286,9 +302,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="38" selection-start="688" selection-end="688" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="578">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/LRU.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="76" selection-start="2876" selection-end="2876" vertical-scroll-proportion="0.6480447" vertical-offset="1102" max-vertical-offset="1980">
+        <state line="6" column="43" selection-start="156" selection-end="156" vertical-scroll-proportion="0.09497207" vertical-offset="0" max-vertical-offset="2533">
           <folding>
             <element signature="e#0#39#0" expanded="false" />
           </folding>

@@ -4,10 +4,10 @@
 var getPageTableFrames;
 var getPhysicalFramesNumber;
 var framesArray=[];
-var referenceStringArray=[7,7,0,1,2];
+var referenceStringArray=[7,0,1,2,0,3,0,4,2];
 var lruStack=[];
-var temp4ReferenceRepeat=0;
-var tempCnt=1;
+//var temp4ReferenceRepeat=0;
+//var tempCnt=1;
 
 
 function getPageFrames(){
@@ -26,12 +26,13 @@ function initializeFrameStack(pageTableFrames){
 }
 
 function loopingFramesArray(){
-
-    for(var temp=0;temp<framesArray.length;temp++){
-        if(framesArray[temp]!=1){
+    var tempCnt=0;
+    for(var temp= 0;temp<framesArray.length;temp++){
+        if(framesArray[temp]!=-1){
             tempCnt++;
         }
     }
+    console.log("TempCnt="+tempCnt);
     if(tempCnt==framesArray.length)
         return true;
     else
@@ -39,18 +40,46 @@ function loopingFramesArray(){
 }
 
 function checkReferenceRepeat(currentReferenceCounter){
-
+    var temp4ReferenceRepeat=0;
     for(var counter=currentReferenceCounter;counter>0;counter--){
         if(referenceStringArray[currentReferenceCounter]==referenceStringArray[counter-1]){
             temp4ReferenceRepeat++;
         }
     }
 
-    if(temp4ReferenceRepeat==currentReferenceCounter){
+    console.log("temp4referenceRepeat="+temp4ReferenceRepeat);
+    if(temp4ReferenceRepeat==0){
         return true;}
     else{
-        return false;}
+        if(checkLruStackExist(currentReferenceCounter)){
+            lruStack.splice(returnExistingLruStackPosition(currentReferenceCounter),1);
+            lruStack.unshift(referenceStringArray[currentReferenceCounter]);
+        }
+        else{
+            lruStack.pop();
+            lruStack.unshift(referenceStringArray[currentReferenceCounter]);
+            return false;}
+        }
 
+
+}
+
+function checkLruStackExist(currentReferenceCounter){
+    var flag=false;
+    for(var count=0;count<lruStack.length;count++){
+        if(referenceStringArray[currentReferenceCounter]==lruStack[count]){
+            flag=true;
+        }
+    }
+    return flag;
+}
+
+function returnExistingLruStackPosition(currentReferenceCounter){
+    for(var count=0;count<lruStack.length;count++){
+        if(referenceStringArray[currentReferenceCounter]==lruStack[count]){
+            return count;
+        }
+    }
 }
 
 function generateRandomReferenceString(){
@@ -67,6 +96,32 @@ function generateLRU(){
     generateRandomReferenceString();
     var currentPageFrame,secondCounter,thirdCounter;
     for(currentPageFrame=0;currentPageFrame<referenceStringArray.length;currentPageFrame++){
+        AgainLoopingFrameArray:{
+            if(loopingFramesArray()){
+
+                if(checkReferenceRepeat(currentPageFrame)){
+//                    if(checkLruStackExist(currentPageFrame)){
+//                        lruStack.splice(returnExistingLruStackPosition(currentPageFrame),1);
+//                        lruStack.unshift(referenceStringArray[currentPageFrame]);
+//                    }
+
+                    var lastValueOfLRU=lruStack.pop();
+                    console.log("lastValueOfLRU="+lastValueOfLRU);
+                    lruStack.unshift(referenceStringArray[currentPageFrame]);
+                    console.log("lruStack[0]="+lruStack[0]);
+                    for(var finderReferenceString=0;finderReferenceString<framesArray.length;finderReferenceString++){
+                        if(framesArray[finderReferenceString]==lastValueOfLRU){
+                            framesArray[finderReferenceString]=lruStack[0];
+                        }
+                    }
+
+                }
+                else{
+                    break AgainLoopingFrameArray;
+                }
+            }
+        }
+
         loopingFrameArray:{
             for(secondCounter=0;secondCounter<framesArray.length;secondCounter++){
                 if(framesArray[secondCounter]==-1){
@@ -81,23 +136,7 @@ function generateLRU(){
                 }
             }
         }
-        AgainLoopingFrameArray:{
-            if(loopingFramesArray()){
-                if(checkReferenceRepeat(currentPageFrame)){
-                    lruStack.pop();
-                    lruStack.unshift(referenceStringArray[currentPageFrame]);
-                    for(var finderReferenceString=0;finderReferenceString<framesArray.length;finderReferenceString++){
-                        if(framesArray[finderReferenceString]==lruStack[0]){
-                            finderReferenceString[finderReferenceString]=lruStack[0];
-                        }
-                    }
 
-                }
-                else{
-                    break AgainLoopingFrameArray;
-                }
-            }
-        }
         console.log(lruStack);
         console.log(framesArray);
     }
