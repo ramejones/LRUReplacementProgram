@@ -26,27 +26,25 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="29" selection-start="974" selection-end="999" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="578">
+            <state line="25" column="0" selection-start="941" selection-end="941" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LRU.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="LRU.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LRU.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="91" selection-start="5732" selection-end="5732" vertical-scroll-proportion="0.8773449" vertical-offset="2197" max-vertical-offset="2924">
-              <folding>
-                <element signature="e#0#39#0" expanded="false" />
-              </folding>
+            <state line="157" column="38" selection-start="5145" selection-end="5145" vertical-scroll-proportion="0.0" vertical-offset="2163" max-vertical-offset="3230">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="18" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="714" max-vertical-offset="1003">
+            <state line="63" column="1" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.85281384" vertical-offset="480" max-vertical-offset="1173">
               <folding />
             </state>
           </provider>
@@ -63,8 +61,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/LRU.js" />
+        <option value="$PROJECT_DIR$/style.css" />
       </list>
     </option>
   </component>
@@ -100,7 +98,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -121,28 +118,21 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="editor" />
+    <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -151,6 +141,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -227,6 +225,13 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="32" selection-start="139" selection-end="139" vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="38" selection-start="688" selection-end="688" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
@@ -237,9 +242,7 @@
     <entry file="file://$PROJECT_DIR$/LRU.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="119" column="21" selection-start="3760" selection-end="3760" vertical-scroll-proportion="0.0" vertical-offset="2023" max-vertical-offset="2550">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -260,9 +263,7 @@
     <entry file="file://$PROJECT_DIR$/LRU.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="31" selection-start="706" selection-end="706" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1904">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -290,9 +291,7 @@
     <entry file="file://$PROJECT_DIR$/LRU.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="119">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -313,32 +312,28 @@
     <entry file="file://$PROJECT_DIR$/LRU.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="40" selection-end="40" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="119">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="18" selection-start="762" selection-end="762" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="29" selection-start="974" selection-end="999" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="578">
+        <state line="25" column="0" selection-start="941" selection-end="941" vertical-scroll-proportion="-16.346153" vertical-offset="0" max-vertical-offset="561">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LRU.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="91" selection-start="5732" selection-end="5732" vertical-scroll-proportion="0.8773449" vertical-offset="2197" max-vertical-offset="2924">
-          <folding>
-            <element signature="e#0#39#0" expanded="false" />
-          </folding>
+        <state line="157" column="38" selection-start="5145" selection-end="5145" vertical-scroll-proportion="0.0" vertical-offset="2163" max-vertical-offset="3230">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="1" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.85281384" vertical-offset="480" max-vertical-offset="1173">
+          <folding />
         </state>
       </provider>
     </entry>

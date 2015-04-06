@@ -18,16 +18,18 @@ input{
     margin-top: 10px;
 }
 
-#showReplacement{
-    background-color: blueviolet;
+.showReplacement{
+    /*background-color: blueviolet;*/
     width: 60px;
     height: 105px;
-    margin: 100px;
-    border: 2px solid darkcyan;
+    margin-left: 5px;
+    display: inline-block;
+    /*margin: 100px;*/
+    /*border: 2px solid darkcyan;*/
 }
 
-#referenceString{
-    background-color: cornflowerblue;
+.referenceString{
+    /*background-color: cornflowerblue;*/
     width: 20px;
     height: 20px;
     padding-top: 10px;
@@ -35,20 +37,28 @@ input{
     /*border-radius: 10px;*/
 }
 
-#pageFrames{
-    background-color: yellowgreen;
+.pageFrames{
+    display: block;
+    /*background-color: yellowgreen;*/
     text-decoration: none;
     list-style-type: none;
     /*border-radius: 10px;*/
     /*padding-left: 0px;*/
-    /*margin: 0px;*/
+    margin: 0px;
 }
 
 li{
+    /*display: inline-block;*/
     /*margin-left: 10px;*/
     padding-top: 5px;
-    margin-left: 30px;
-    padding-left: 10px;
+    /*margin-left: 30px;*/
+    padding-right: 10px;
+    /*padding-left: 10px;*/
     border: 1px solid brown;
     background-color: gold;
+}
+
+#printReplacement{
+    margin-top: 100px;
+    margin-left: 10px;
 }

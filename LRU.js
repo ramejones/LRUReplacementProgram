@@ -4,11 +4,13 @@
 var getPageTableFrames;
 var getPhysicalFramesNumber;
 var framesArray=[];
-var referenceStringArray=[7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7];
+var referenceStringArray=[];
+//var referenceStringArray=[7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7];
 var lruStack=[];
 //var temp4ReferenceRepeat=0;
 //var tempCnt=1;
-
+var run=-1;
+var frames;
 
 function getPageFrames(){
     getPageTableFrames=parseInt(document.getElementById("pageFrameNumber").value);
@@ -92,14 +94,15 @@ function returnExistingLruStackPosition(currentReferenceCounter){
             return count;
         }
     }
+
 }
 
 function generateRandomReferenceString(){
     initializeFrameStack(getPageTableFrames);
 
-//    for(var count=0;count<getPhysicalFramesNumber;count++){
-//        referenceStringArray[count]=Math.floor((Math.random()*8));
-//    }
+    for(var count=0;count<getPhysicalFramesNumber;count++){
+        referenceStringArray[count]=Math.floor((Math.random()*8));
+    }
     console.log(framesArray);
     console.log(referenceStringArray);
 }
@@ -112,10 +115,6 @@ function generateLRU(){
             if(loopingFramesArray()){
 
                 if(checkReferenceRepeat(currentPageFrame)){
-//                    if(checkLruStackExist(currentPageFrame)){
-//                        lruStack.splice(returnExistingLruStackPosition(currentPageFrame),1);
-//                        lruStack.unshift(referenceStringArray[currentPageFrame]);
-//                    }
 
                     var lastValueOfLRU=lruStack.pop();
                     console.log("lastValueOfLRU="+lastValueOfLRU);
@@ -128,14 +127,7 @@ function generateLRU(){
                     }
 
                 }
-//                else if(checkLruStackExist(currentPageFrame)){
-//                    console.log("newLruStack="+lruStack);
-//                    for(var findingReferenceString=0;findingReferenceString<framesArray.length;findingReferenceString++){
-//                        if(framesArray[findingReferenceString]==lruStack[0]){
-//                            framesArray[findingReferenceString]=lruStack[0];
-//                        }
-//                    }
-//                }
+
                 else{
                     break AgainLoopingFrameArray;
                 }
@@ -158,12 +150,35 @@ function generateLRU(){
         }
 
         console.log(lruStack);
-        console.log(framesArray);
+        console.log("PageFrame="+framesArray);
+
+
+        document.getElementById("printReplacement").innerHTML+="<div class='showReplacement'>" +
+            "<div class='referenceString'>"+referenceStringArray[currentPageFrame]+"</div>" +
+            "<ul class='pageFrames'>"+
+//            "<ul class='pageFrames'>" +showFrames(framesArray)+
+            "<li>"+framesArray[0]+"</li><li>"+framesArray[1]+"</li><li>"+framesArray[2]+"</li>" +
+            "</ul></div>";
+
 
     }
 
 }
 
-function printLruReplacement(){
-    document.getElementById("showReplacement").innerHTML+="<div id='referenceString'></div>"
-}
+//function showFrames(gettingFramesArray){
+//    console.log("Show FrameArray==="+gettingFramesArray);
+//    frames=document.getElementById("printReplacement").innerHTML+="<li>"+gettingFramesArray[++run]+"</li>";
+//    if(run!=gettingFramesArray.length-1){
+//        console.log("entered into if condition & show run="+run);
+//        showFrames(framesArray);
+//    }
+//    else{
+//        console.log("means run is 2");
+//        console.log("framesHTML"+frames);
+//        run=-1;
+//        return frames;
+//    }
+//
+//}
+
+
