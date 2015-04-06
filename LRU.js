@@ -4,7 +4,7 @@
 var getPageTableFrames;
 var getPhysicalFramesNumber;
 var framesArray=[];
-var referenceStringArray=[7,0,1,2,0,3,0,4,2];
+var referenceStringArray=[7,0,1,2,0,3,0,4,2,3,0,3,2,1,2,0,1,7];
 var lruStack=[];
 //var temp4ReferenceRepeat=0;
 //var tempCnt=1;
@@ -51,21 +51,33 @@ function checkReferenceRepeat(currentReferenceCounter){
     if(temp4ReferenceRepeat==0){
         return true;}
     else{
+
         if(checkLruStackExist(currentReferenceCounter)){
             lruStack.splice(returnExistingLruStackPosition(currentReferenceCounter),1);
             lruStack.unshift(referenceStringArray[currentReferenceCounter]);
+            return false;
         }
         else{
-            lruStack.pop();
+            var gettingLastValueLruStack=lruStack.pop();
             lruStack.unshift(referenceStringArray[currentReferenceCounter]);
+            updateFramesArray(gettingLastValueLruStack);
             return false;}
         }
 
 
 }
+function updateFramesArray(lastValueLruStack){
+    for(var findingReferenceString=0;findingReferenceString<framesArray.length;findingReferenceString++){
+        if(framesArray[findingReferenceString]==lastValueLruStack){
+            framesArray[findingReferenceString]=lruStack[0];
+        }
+    }
+}
+
 
 function checkLruStackExist(currentReferenceCounter){
     var flag=false;
+    console.log("lruStackIncheckLruStackExist="+lruStack);
     for(var count=0;count<lruStack.length;count++){
         if(referenceStringArray[currentReferenceCounter]==lruStack[count]){
             flag=true;
@@ -116,6 +128,14 @@ function generateLRU(){
                     }
 
                 }
+//                else if(checkLruStackExist(currentPageFrame)){
+//                    console.log("newLruStack="+lruStack);
+//                    for(var findingReferenceString=0;findingReferenceString<framesArray.length;findingReferenceString++){
+//                        if(framesArray[findingReferenceString]==lruStack[0]){
+//                            framesArray[findingReferenceString]=lruStack[0];
+//                        }
+//                    }
+//                }
                 else{
                     break AgainLoopingFrameArray;
                 }
@@ -139,7 +159,11 @@ function generateLRU(){
 
         console.log(lruStack);
         console.log(framesArray);
+
     }
 
 }
 
+function printLruReplacement(){
+    document.getElementById("showReplacement").innerHTML+="<div id='referenceString'></div>"
+}
