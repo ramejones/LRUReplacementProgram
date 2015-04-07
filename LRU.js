@@ -101,7 +101,7 @@ function generateRandomReferenceString(){
     initializeFrameStack(getPageTableFrames);
 
     for(var count=0;count<getPhysicalFramesNumber;count++){
-        referenceStringArray[count]=Math.floor((Math.random()*8));
+        referenceStringArray[count]=Math.floor((Math.random()*10));
     }
     console.log(framesArray);
     console.log(referenceStringArray);
@@ -109,6 +109,7 @@ function generateRandomReferenceString(){
 
 function generateLRU(){
     generateRandomReferenceString();
+    document.getElementById("printReplacement").innerHTML="";
     var currentPageFrame,secondCounter,thirdCounter;
     for(currentPageFrame=0;currentPageFrame<referenceStringArray.length;currentPageFrame++){
         AgainLoopingFrameArray:{
@@ -153,12 +154,30 @@ function generateLRU(){
         console.log("PageFrame="+framesArray);
 
 
-        document.getElementById("printReplacement").innerHTML+="<div class='showReplacement'>" +
+//        document.getElementById("printReplacement").innerHTML+="<div class='showReplacement'>" +
+//            "<div class='referenceString'>"+referenceStringArray[currentPageFrame]+"</div>" +
+//            "<ul class='pageFrames'>"+
+////            "<ul class='pageFrames'>" +showFrames(framesArray)+
+//            "<li>"+framesArray[0]+"</li><li>"+framesArray[1]+"</li><li>"+framesArray[2]+"</li>" +
+//            "</ul></div>";
+
+        var x="";
+        x+="<div class='showReplacement'>" +
             "<div class='referenceString'>"+referenceStringArray[currentPageFrame]+"</div>" +
-            "<ul class='pageFrames'>"+
+            "<ul class='pageFrames'>";
 //            "<ul class='pageFrames'>" +showFrames(framesArray)+
-            "<li>"+framesArray[0]+"</li><li>"+framesArray[1]+"</li><li>"+framesArray[2]+"</li>" +
-            "</ul></div>";
+        for(var i= 0,len=framesArray.length;i<len;i++){
+            if(framesArray[i]==-1)
+                var y = ".";
+            else
+                y=framesArray[i];
+
+            x+="<li>" + y + "</li>";
+        }
+
+        x+="</ul></div>";
+
+        document.getElementById("printReplacement").innerHTML+=x;
 
 
     }

@@ -56,9 +56,14 @@ li{
     /*padding-left: 10px;*/
     border: 1px solid brown;
     background-color: gold;
+    min-height: 20px;
+    min-width: 20px;
+    text-align: center;
 }
 
 #printReplacement{
     margin-top: 100px;
+    margin-bottom: 100px;
     margin-left: 10px;
+    text-align: center;
 }
